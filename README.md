@@ -86,13 +86,13 @@ Choose one of the following methods:
 #### Method A: Copy to htdocs Folder
 ```powershell
 # Run in PowerShell
-Copy-Item -Recurse "c:\Users\jyori\Desktop\PHP-system\php-database" "C:\xampp\htdocs\php-database"
+Copy-Item -Recurse "c:\Users\<your_username>\Desktop\PHP-system\php-database" "C:\xampp\htdocs\php-database"
 ```
 
 #### Method B: Create Symbolic Link
 ```powershell
 # Run PowerShell as Administrator
-New-Item -ItemType SymbolicLink -Path "C:\xampp\htdocs\php-database" -Target "c:\Users\jyori\Desktop\PHP-system\php-database"
+New-Item -ItemType SymbolicLink -Path "C:\xampp\htdocs\php-database" -Target "c:\Users\<your_username>\Desktop\PHP-system\php-database"
 ```
 
 ### 5. Access the Application
