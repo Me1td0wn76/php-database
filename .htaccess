@@ -1,0 +1,26 @@
+# Apache設定ファイル
+# PHPエラー表示設定(開発環境用)
+
+# PHPエラーを表示
+php_flag display_errors on
+php_value error_reporting E_ALL
+
+# デフォルトの文字コードをUTF-8に設定
+php_value default_charset "UTF-8"
+
+# セッションの設定
+php_value session.save_path "/tmp"
+
+# ファイルアップロードの設定
+php_value upload_max_filesize "10M"
+php_value post_max_size "10M"
+
+# インデックスファイルの設定
+DirectoryIndex run.php index.php index.html
+
+# セキュリティ: ディレクトリリスティングを無効化
+Options -Indexes
+
+# エラーページのカスタマイズ(オプション)
+# ErrorDocument 404 /php-database/error.php
+# ErrorDocument 500 /php-database/error.php
